@@ -1,0 +1,31 @@
+.section-work {
+    padding-top: 0px;
+    background-color: var(--primary-backgroun-color);
+}
+
+.section-work-list {
+    display: flex;
+}
+
+.section-work-item {
+    position: relative;
+}
+
+.section-work-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work-descr {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+}
