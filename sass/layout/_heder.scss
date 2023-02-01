@@ -1,5 +1,5 @@
 header {
-    background-color: var(--heder-backgroun-color);
+    background-color: var(--p);
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
@@ -19,36 +19,38 @@ header {
     display: flex;
 }
 
-
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
     margin-right: 52px;
 }
 
-.nav-list-link {
+.nav-list__link {
     position: relative;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus,
 .current {
     color: var(--accent-color);
-}
 
-.current::after {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: -32px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    content: '';
-    background-color: var(--accent-color);
+    &::after {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: -32px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        content: '';
+        background-color: var(--accent-color);
+    }
 }
 
 .contacts {
@@ -57,11 +59,11 @@ header {
     margin-left: auto;
 }
 
-.contacts-list:not(:last-child) {
+.contacts__item:not(:last-child) {
     margin-right: 52px;
 }
 
-.contacts-list-link {
+.contacts__link {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -71,12 +73,12 @@ header {
     fill: var(--primary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts-list-link:hover,
-.contacts-list-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
 .email-img {

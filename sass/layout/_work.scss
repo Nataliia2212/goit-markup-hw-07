@@ -1,21 +1,21 @@
-.section-work {
+.work {
     padding-top: 0px;
     background-color: var(--primary-backgroun-color);
 }
 
-.section-work-list {
+.work__list {
     display: flex;
 }
 
-.section-work-item {
+.work__item {
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.section-work-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.work-descr {
+.work__description {
     position: absolute;
     width: 100%;
     left: 0;
