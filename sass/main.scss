@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
+@import './base/normolize';
 @import './base/common';
 @import './base/container';
 
@@ -9,6 +10,8 @@
 @import './components/main-title';
 @import './components/title';
 @import './components/logo';
+@import './components/navigation';
+@import './components/address';
 @import './components/backdrop';
 @import './components/modal';
 @import './components/form';

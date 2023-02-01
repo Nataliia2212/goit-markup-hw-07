@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 
-.form-button {
+.button-form {
     display: flex;
     margin: 0;
     min-width: 200px;
@@ -32,12 +32,12 @@
     align-items: center;
 }
 
-.form-icon {
+.button__icon {
     margin-left: 10px;
     fill: #ffffff;
 }
 
-.portfolio-button {
+.button-portfolio {
     min-width: 73px;
     padding-top: 6px;
     padding-bottom: 6px;
